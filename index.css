@@ -67,6 +67,20 @@ nav {
   align-items: center;
   height: 100vh;
 }
+.page-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.page-title>p {
+  padding: 2em;
+  margin: 2em;
+  text-align: center;
+  font-size: 500%;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
 .page-title>p {
   padding: 2em;
   margin: 2em;
@@ -174,8 +188,10 @@ footer p {
   }
 
   .page-title>p {
-    font-size: 325%;
+    margin: 0;
+    padding: 0;
   }
+
 }
 @media (max-width: 768px) {
   nav {
@@ -213,8 +229,15 @@ footer p {
     background-color: white;
     right: 0;
   }
-
+  .page-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
   .page-title>p {
-    font-size: 200%;
+    margin: 0em;
+    padding: 0em;
   }
 }
