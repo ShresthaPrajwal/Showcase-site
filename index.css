@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +9,12 @@
 
   /* border: 1px solid red!important; */
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
+  /* scroll-behavior: smooth; */
 }
 
 nav {
@@ -57,23 +61,27 @@ nav {
   background-color: #f8f9fa;
   font-family: "Roboto", sans-serif;
 }
-
+.navbar-lists a {
+  text-decoration: none;
+  color: #000000;
+  /* scroll-behavior: smooth; */
+}
 #hamburger {
   display: none;
 }
-.page-title{
+.page-title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.page-title{
+.page-title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.page-title>p {
+.page-title > p {
   padding: 2em;
   margin: 2em;
   text-align: center;
@@ -81,7 +89,7 @@ nav {
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
-.page-title>p {
+.page-title > p {
   padding: 2em;
   margin: 2em;
   text-align: center;
@@ -105,11 +113,10 @@ nav {
   text-align: center;
   width: 35rem;
   transition: transform 0.4s ease-in-out;
-
 }
 
 .project:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .project img {
@@ -182,16 +189,14 @@ footer p {
   margin: 0;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  nav{
+  nav {
     font-size: large;
   }
 
-  .page-title>p {
+  .page-title > p {
     margin: 0;
     padding: 0;
   }
-
 }
 @media (max-width: 768px) {
   nav {
@@ -229,14 +234,13 @@ footer p {
     background-color: white;
     right: 0;
   }
-  .page-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  
-}
-  .page-title>p {
+  .page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .page-title > p {
     margin: 0em;
     padding: 0em;
   }
